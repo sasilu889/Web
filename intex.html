@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minthula Agro Center</title>
+  <style>
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: linear-gradient(to right, var(--color1), var(--color2)); /* Gradient background */
+    transition: background-image 2s ease-in-out; /* Smooth transition for background image (though for gradients, direct transition is harder) */
+    /* For seamless transitions, we'll manually update the RGB values */
+}
+    header {
+      background: #0077cc;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background:;
+      padding: 0.5rem;
+      text-align: center;
+      position: relative; /* Add for positioning dropdown */
+    }
+    button {
+      color: white;
+      background: #005fa3;
+      height:65px;
+      width: 199px;
+      text-align: center;
+      
+    }
+    
+    section {
+      padding: 50px;
+        margin-bottom: 20px;
+        border: 5px solid ;
+    }
+    
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      padding: 0.5rem 0; /* Add padding for clickable area */
+      display: inline-block; /* Ensure padding works */
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: white;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.08);
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      color: #555;
+      width: 100%;
+      /* position: fixed; - Removed for better mobile experience, consider alternatives if fixed is a must */
+      bottom: 0;
+    }
+    @media (max-width: 600px) {
+      main { padding: 1rem; }
+      nav a { display: block; margin: 0.5rem 0; }
+      .dropdown {
+        display: block; /* Make dropdown block on small screens */
+        text-align: center;
+      }
+      .dropdown-content {
+        position: static; /* Remove absolute positioning on small screens */
+        width: 100%;
+        transform: translateX(0); /* Remove centering transform */
+        box-shadow: none;
+      }
+      p {
+        background-color: #333333; /* ිවිද පසුබිම් වර්ණයක් */
+    border: 8px solid rgba(255, 0,5, 0.3); /* ලා සුදු මායිමක් */
+    padding: 20px; /* පෙට්ටිය ඇතුළත අකුරු වටේට ඇති ඉඩ */
+    margin: 30px float; /* පෙට්ටිය වටා ඇති ඉඩ (පිටුවේ මැදට ගේන්න auto
+    width: 60%; /* පෙට්ටියේ පළල */
+    max-width: 700px; /* උපරිම පළලක් නියම කිරීම */
+    border-radius: 8px; /* පෙට්ටියේ කොන් වටකුරු කිරීමට */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    text-align: justify; 
+}
+
+.comment-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.comment-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#comment-text {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    resize: vertical; /* පෙට්ටිය උසට සහ පළලට වෙනස් කරන්න */
+    min-height: 80px;
+    box-sizing: border-box;
+}
+
+#submit-comment {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    align-self: flex-end; /* බොත්තම දකුණු පැත්තට ගන්න */
+}
+
+#submit-comment:hover {
+    background-color: #0056b3;
+}
+
+.comment {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.comment-author {
+    font-weight: bold;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.comment-text {
+    color: #333;
+    line-height: 1.5;
+}
+
+.comment-timestamp {
+    font-size: 0.8em;
+    color: #888;
+    text-align: right;
+    margin-top: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <marquee beheviuor="scroll" derection="left" style="color:red" height="20px">
+      WELLCOME TO MINTHULA AGRO CENTER 🙏
+    </marquee>
+    <img src="Test/img/Screenshot_20250527_192551_Chrome.jpg" alt="minthula agro's logo" with="400" height="250">
+  </header>
+  <nav>
+<textarea id="id" name="name" rows="1" cols="50"></textarea>
+  
+   <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#product.html"></a>
+<button onclick="window.location.href='product.html'">product</button>
+
+
+        <a href="about.html"></a>
+<button onclick="window.location.href='about.html'">about us</button>
+
+        <a href="gallery.html">Gallery</a>
+  </nav>
+  <main>
+    <section id="home">
+      <h2>Home</h2>
+      <p style="color:green">
+        ආයුබෝවන්.මින්තුල ඇග්‍රො සෙන්ටර් වෙබ් අඩවියට ඔබව සාදරයෙන් පිලිගන්නවා ඉහත ඇති  product බටන් එකෙන් අප වෙලදසැලෙන් මිල දී ගත හැකි වල්නාශක ,කෘමිනාශක,පොහොර ආදී සියලු නිශ්පාදන බලාගත හැකියි..</p>
+        
+        <button onclick="window.location.href='product.html'"  >👉product👈</button>
+      
+    </section>
+    <section id="about">
+      <h2>About</h2>
+      <p style="color:yellow"> You can buy anything related to agriculture.වෙහෙරගල ඇති අපගේ මින්තුල ඇග්‍රෝ  අලෙවිසැලෙන් ඔබට  pruduct පිටුවේ දිස්වෙන නිද්පාදන මිලවී ගත හැක.
+      
+      මෙය තවම සැකසෙමින් පවතී. ඔබට මින්තුල ඇග්‍රො සෙන්ටර් තුලින් ඕනෑම කෘමිනාශක, වල්නාශක ආදී දේවල් මිලදී ගතහැක.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p style="color:red">NAME - MINTHULA AGRO CENTER</p>
+      <p style="=color:red"ADRESS - 01, වානිජ වෙහෙරගල</p>
+      <button>Contact - 0784331180</button>
+      <form>
+        </form>
+    </section>
+    <!DOCTYPE html>
+<html lang="si">
+<head>
+    <div class="comment-section">
+        <h2>අදහස් දැක්වීම්</h2>
+        <div class="comment-input">
+            <textarea id="comment-text" placeholder="ඔබේ අදහස මෙහි ලියන්න..."></textarea>
+            <button id="submit-comment">පළ කරන්න</button>
+        </div>
+        <div class="comments-display" id="comments-display">
+            </div>
+    </div>
+
+</body>
+</html>
+
+  </main>
+  <footer>
+    <p style="color:red">web developed by = sasilu dinhas.</p>
+    <p>&copy; 2025 Minthula Agro Center. All rights reserved.</p>
+  </footer>
+
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+    const body = document.body;
+
+    // Define a set of colors to cycle through (as RGB arrays)
+    const colors = [
+        [225, 0,25],   // Indigo
+        [200,25, 50], // BlueViolet
+        [175, 50, 100],  // DeepSkyBlue
+        [150, 75, 125],  // SpringGreen
+        [255, 165, 0],  // Orange
+        [255, 69, 0],// OrangeRed
+        [255,69,29],
+        [159,69,0],
+        [0,15,255]
+        
+    ];
+
+    let colorIndex = 0;
+    let step = 0;
+    const totalSteps =110; // Number of steps for smooth transition
+    const intervalTime =30; // Milliseconds between each step (for smooth animation)
+    const holdTime = 200; // How long to hold a color before transitioning (2 seconds)
+
+    function interpolateColor(color1, color2, factor) {
+        const result = color1.slice();
+        for (let i = 0; i < 3; i++) {
+            result[i] = Math.round(result[i] + factor * (color2[i] - color1[i]));
+        }
+        return `rgb(${result[0]}, ${result[1]}, ${result[2]})`;
+    }
+
+    function animateColorChange() {
+        const currentColor = colors[colorIndex];
+        const nextColorIndex = (colorIndex + 1) % colors.length;
+        const nextColor = colors[nextColorIndex];
+
+        step = 0; // Reset step for new transition
+
+        const transitionInterval = setInterval(() => {
+            step++;
+            if (step <= totalSteps) {
+                const factor = step / totalSteps;
+                const interpolatedColor = interpolateColor(currentColor, nextColor, factor);
+                body.style.backgroundColor = interpolatedColor;
+            } else {
+                clearInterval(transitionInterval); // Stop this transition
+                colorIndex = nextColorIndex; // Move to the next color
+                setTimeout(animateColorChange, holdTime); // Start next transition after hold time
+            }
+        }, intervalTime);
+    }
+
+    // Start the animation
+    animateColorChange();
+});
+    // Get the "More" button and the dropdown content
+    
+    const myDropdown = document.getElementById("myDropdown");
+
+    // When the user clicks on the button, toggle between hiding and showing the dropdown content
+    moreBtn.addEventListener("click", function(event) {
+      event.preventDefault(); // Prevent default link behavior (like jumping to top)
+      myDropdown.classList.toggle("show");
+    });
+
+    // Close the dropdown if the user clicks outside of it
+    window.addEventListener("click", function(event) {
+      if (!event.target.matches('.dropbtn')) {
+        if (myDropdown.classList.contains('show')) {
+          myDropdown.classList.remove('show');
+        }
+      }
+    });
+document.addEventListener('DOMContentLoaded', () => {
+    // අවශ්‍ය HTML මූලද්‍රව්‍ය ලබා ගැනීම
+    const commentTextInput = document.getElementById('comment-text');
+    const submitCommentButton = document.getElementById('submit-comment');
+    const commentsDisplay = document.getElementById('comments-display');
+
+    // Local Storage එකෙන් කමෙන්ට් load කරන function එක
+    function loadComments() {
+        // 'comments' නමින් local storage එකේ තියෙන දත්ත JSON විදිහට අරන්, නැත්නම් හිස් array එකක් දෙනවා.
+        const comments = JSON.parse(localStorage.getItem('comments')) || [];
+        commentsDisplay.innerHTML = ''; // දැනට තියෙන කමෙන්ට් අයින් කරනවා
+        // හැම කමෙන්ට් එකක්ම display එකට එකතු කරනවා
+        comments.forEach(comment => {
+            addCommentToDisplay(comment.text, comment.timestamp);
+        });
+    }
+
+    // Local Storage එකට කමෙන්ට් save කරන function එක
+    function saveComments(comments) {
+        // comments array එක JSON string එකක් විදිහට local storage එකේ 'comments' නමින් save කරනවා.
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+
+    // කමෙන්ට් එකක් display එකට එකතු කරන function එක
+    function addCommentToDisplay(commentText, timestamp) {
+        const commentDiv = document.createElement('div');
+        commentDiv.classList.add('comment'); // 'comment' class එක එකතු කරනවා
+
+        const commentAuthor = document.createElement('div');
+        commentAuthor.classList.add('comment-author');
+        // සැබෑ application එකකදී log වෙලා ඉන්න user ගේ නම මෙතනට එනවා
+        commentAuthor.textContent = 'ආගන්තුක පරිශීලක'; 
+
+        const commentContent = document.createElement('p');
+        commentContent.classList.add('comment-text');
+        commentContent.textContent = commentText; // කමෙන්ට් එකේ text එක
+
+        const commentTimestamp = document.createElement('div');
+        commentTimestamp.classList.add('comment-timestamp');
+        // කමෙන්ට් එක දැමූ වෙලාව ශ්‍රී ලංකා වේලාවට සකසා පෙන්වයි
+        commentTimestamp.textContent = new Date(timestamp).toLocaleString('si-LK'); 
+
+        // හැදූ කොටස් commentDiv එකට එකතු කරනවා
+        commentDiv.appendChild(commentAuthor);
+        commentDiv.appendChild(commentContent);
+        commentDiv.appendChild(commentTimestamp);
+        // අලුත් කමෙන්ට් උඩින්ම පෙන්වයි
+        commentsDisplay.prepend(commentDiv); 
+    }
+
+    // "පළ කරන්න" බොත්තමට event listener එකක්
+    submitCommentButton.addEventListener('click', () => {
+        const commentText = commentTextInput.value.trim(); // ටයිප් කල කමෙන්ට් එකේ හිස්තැන් අයින් කරනවා
+        if (commentText) { // කමෙන්ට් එක හිස් නැත්නම්
+            const timestamp = new Date().toISOString(); // දැනට තියෙන වෙලාව ලබා ගන්නවා
+            const comments = JSON.parse(localStorage.getItem('comments')) || []; // දැනට තියෙන කමෙන්ට් load කරනවා
+            comments.push({ text: commentText, timestamp: timestamp }); // අලුත් කමෙන්ට් එක එකතු කරනවා
+            saveComments(comments); // කමෙන්ට් save කරනවා
+            addCommentToDisplay(commentText, timestamp); // කමෙන්ට් display එකට එකතු කරනවා
+            commentTextInput.value = ''; // input field එක හිස් කරනවා
+        } else {
+            alert('කරුණාකර අදහසක් ලියා පළ කරන්න!'); // කමෙන්ට් එක හිස් නම් අනතුරු ඇඟවීමක්
+        }
+    });
+
+    // පිටුව load වෙනකොට කමෙන්ට් load කරනවා
+    loadComments();
+});
+
+  </script>
+</body>
+</html>
+
+<html>

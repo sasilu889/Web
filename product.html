@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+    <meta charset="UTF-8">
+    <title>Minthula Agro Center / Products</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0; /* Margin 0 කළා, padding section වලට දාමු */
+            background: url('Test/img/images.jpeg') no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh; /* මුළු viewport එකම ආවරණය කිරීමට */
+            color: #ffffff; /* Default text color for body */
+        }
+
+        /* Navigation styles */
+        nav {
+            background-color: rgba(0, 0, 0, 0.7); /* ටිකක් විනිවිද පෙනෙන පසුබිමක් */
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            display: inline-block; /* Links එක පේලියට එන්න */
+            padding: 10px 15px;
+            margin: 0 5px; /* Links අතර පරතරය */
+            text-decoration: none;
+            color: #ffffff;
+            background-color: #007bff;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #0056b3;
+        }
+
+        /* Search container styles */
+        #search-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        #search-input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            width: 300px;
+            font-size: 16px;
+            box-sizing: border-box; /* Padding border එක ඇතුළට වෙන්න */
+        }
+
+        /* Section styles */
+        section {
+            padding: 50px;
+            margin-bottom: 20px;
+            border: 5px solid rgba(0, 123, 255, 0.5); /* විනිවිද පෙනෙන මායිමක් */
+            background-color: rgba(0, 0, 0, 0.6); /* විනිවිද පෙනෙන පසුබිමක් */
+            border-radius: 10px;
+            margin: 20px auto; /* මැදට එන්න */
+            max-width: 900px; /* උපරිම පළලක් */
+        }
+
+        section h1 {
+            color: red;
+            background-color: white;
+            padding: 5px 10px;
+            display: inline-block; /* Text එකට හරියටම background එන්න */
+            border-radius: 5px;
+        }
+
+        section h2 {
+            color: white;
+            margin-top: 20px;
+        }
+
+        /* Paragraph styles */
+        p {
+            color: #EEEEEE;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        p.my-paragraph-box {
+            background-color: rgba(51, 51, 51, 0.8); /* ටිකක් විනිවිද පෙනෙන පසුබිමක් */
+            border: 5px solid rgba(255, 0, 0, 0.3);
+            padding: 20px;
+            margin: 30px auto; /* මැදට ගේන්න */
+            width: 90%; /* පෙට්ටියේ පළල */
+            max-width: 700px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+            text-align: justify;
+        }
+
+        /* Images inside paragraphs */
+        p.my-paragraph-box img {
+            display: block; /* රූපය වෙනම පේලියක එන්න */
+            margin: 10px auto; /* මැදට ගේන්න */
+            max-width: 100%; /* පෙට්ටියෙන් එලියට නොයන්න */
+            height: auto;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <a href="#section1">පොහොර</a>
+    <a href="#section2">වල්නාශක</a>
+    <a href="#section3">කෘමිනාශක</a>
+    <a href="#section4">කෘෂි උපකරණ</a>
+</nav>
+
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="මාතෘකා සොයන්න...">
+</div>
+
+<section id="section1">
+    <h1>1. පොහොර</h1>
+    <img src="Test/img/1691231562-fertilizer_L.jpg" alt="Fertilizer Image" width="300" height="200">
+
+    <h2>යූරියා</h2>
+    <p class="my-paragraph-box">
+        <img src="Test/img/TU-709-600x600.png" alt="Urea" width="250" height="300">
+        මිල රු. 8500 කට. ගොයම් වර්ධනයට, පඳුරු ගැසීමට, අස්වැන්නක් සඳහා භාවිත කෙරේ.
+    </p>
+
+    <h2>ඩිස්කවරි GROW MAX</h2>
+    <p class="my-paragraph-box">
+        <img src="https://via.placeholder.com/200x300?text=Discovery+Grow+Max" alt="Discovery Grow Max" width="200" height="300">
+        මිල රු. _______. ගොයම්, මිරිස්, එළවළු, පළතුරු ආදියෙහි ඵලදාව වැඩි කර ගැනීමට ඩිස්කවරි GROW MAX භාවිත කරන්න.
+    </p>
+    <h2>අරලිය පොහොර</h2>
+    <p class="my-paragraph-box">
+        මෙය අරලිය පොහොර පිළිබඳ විස්තරයයි.
+    </p>
+</section>
+
+<section id="section2">
+    <h1>2. වල්නාශක</h1>
+
+    <h2>ඇටතෙල්</h2>
+    <p class="my-paragraph-box">
+        මෙය ඇටතෙල් වල්නාශක පිළිබඳ විස්තරයයි.
+    </p>
+    <h2>ප්‍රොෆිට්</h2>
+    <p class="my-paragraph-box">
+        <img src="https://via.placeholder.com/200x200?text=CIC+Profit" alt="CIC Profit">
+        මෙය CIC Profit වල්නාශකය පිළිබඳ විස්තරයයි.
+    </p>
+</section>
+
+<section id="section3">
+    <h1>3. කෘමිනාශක</h1>
+    <p class="my-paragraph-box">
+        මෙය කෘමිනාශක පිළිබඳ කොටසයි. මෙහි අවසාන විස්තර අඩංගු වේ.
+    </p>
+</section>
+
+<section id="section4">
+    <h1>4. කෘෂි උපකරණ</h1>
+    <p class="my-paragraph-box">
+        මෙම කොටස කෘෂි උපකරණ පිළිබඳවයි.
+    </p>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('search-input');
+        // හැම section එකක්ම තෝරගන්නවා
+        const sections = document.querySelectorAll('section'); 
+
+        if (!searchInput) {
+            console.error("Error: Element with ID 'search-input' not found.");
+            return;
+        }
+
+        searchInput.addEventListener('keyup', function(event) {
+            const searchTerm = event.target.value.toLowerCase();
+
+            sections.forEach(function(section) {
+                // section එකේ සම්පූර්ණ text content එක අරගන්නවා
+                const sectionText = section.textContent.toLowerCase(); 
+
+                if (sectionText.includes(searchTerm)) {
+                    section.style.display = 'block'; // ගැලපේ නම් පෙන්වන්න
+                } else {
+                    section.style.display = 'none'; // නොගැලපේ නම් සඟවන්න
+                }
+            });
+        });
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1em 0;
+}
+
+main {
+    padding: 2em;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #005f7a;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    /* position: fixed;  මෙය මොබයිල් වල ගැටලු ඇතිකරන්න පුළුවන්, අවශ්‍ය නම් අයින් කරන්න */
+    bottom: 0;
+    width: 100%;
+}
