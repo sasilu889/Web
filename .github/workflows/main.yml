@@ -1,0 +1,20 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # ඔබේ ප්‍රධාන ශාඛාවේ නම (master විය හැක)
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4 # නවතම version එක භාවිතා කරන්න
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3 # GitHub Pages වෙත deploy කිරීමට
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./ # deploy කිරීමට අවශ්‍ය files ඇති ෆෝල්ඩරය. ඔබගේ index.html root එකේ නම් ./ භාවිතා කරන්න
